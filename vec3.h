@@ -55,10 +55,32 @@ public:
    *=
    /=
    */
-   
-
-
-
 };
+   vec3 reflect(const vec3 &v, const vec3 &n) {
+    return v - (n*(v.dot(n))*2);
+   }
+
+   bool refraction(const vec3 &v, const vec3 &n, float ni_nt, vec3 &refract) {
+      vec3 in = v.normalize();
+      float proj = in.dot(n);
+      float discriminant = 1.0-ni_nt*ni_nt*(1-proj*proj);
+      if(discriminant > 0) {
+         refract = (in-n*proj)*ni_nt-n*sqrt(discriminant);
+         return true;
+      } else {
+         return false;
+      }
+   }
+
+   double rand_D() {
+      return rand()/(RAND_MAX+1.0);
+   }
+
+float reflectivity(float cos, float idx) {
+   float a = (1-idx)/(1+idx);
+   a=a*a;
+   return a + (1-a)*pow((1-cos),5);
+}
+   
 
 #endif

@@ -4,14 +4,17 @@
 #include "hittable.h"
 #include "ray.h"
 
+
 class sphere: public hittable {
    public:
    vec3 center;
    float radius;
+   material *mat;
    sphere() {}
-   sphere(const vec3 &a,float b) {
+   sphere(const vec3 &a,float b,material *m) {
       center=a;
       radius=b;
+      mat=m;
    }
    bool hit(const ray &r, float min, float max, hit_record &rec) const{//update&reread
       float a = r.direction.dot(r.direction);//a=dot(direction,direction)
@@ -24,6 +27,7 @@ class sphere: public hittable {
             rec.t=t;
             rec.p=r.position(t);
             rec.n=(rec.p-center)/radius;
+            rec.mat=mat;
             return true;
          }
          t = (-b+sqrt(discriminant))/(2.0*a);
@@ -31,10 +35,13 @@ class sphere: public hittable {
             rec.t=t;
             rec.p=r.position(t);
             rec.n=(rec.p-center)/radius;
+            rec.mat=mat;
             return true;
          }
       }
       return false;
    }
 };
+
+
 #endif
