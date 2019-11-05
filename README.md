@@ -1,9 +1,9 @@
 # Tracer
 ---
 This is an implementation of a ray tracer from *Ray Tracing in One Weekend*.
-It creates a simple image of various size spheres made with various materials.
+It creates a simple image of various size spheres.
 
-
+![Image Produced](/Capture.PNG)
 
 ## Getting Started
 ---
@@ -14,3 +14,4 @@ To run this code you need:
 1. C++ Compiler(I used g++)
 2. PPM viewer(I used gimp)
 
+### Installation
