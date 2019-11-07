@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cuda tracer", "cuda tracer\cuda tracer.vcxproj", "{D89FF105-CB0C-4F92-94F6-31F5857D4C79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D89FF105-CB0C-4F92-94F6-31F5857D4C79}.Debug|x64.ActiveCfg = Debug|x64
+		{D89FF105-CB0C-4F92-94F6-31F5857D4C79}.Debug|x64.Build.0 = Debug|x64
+		{D89FF105-CB0C-4F92-94F6-31F5857D4C79}.Release|x64.ActiveCfg = Release|x64
+		{D89FF105-CB0C-4F92-94F6-31F5857D4C79}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CC4675A-8FD4-46DF-9570-F281CB891195}
+	EndGlobalSection
+EndGlobal
