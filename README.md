@@ -22,6 +22,8 @@ The purpose of writing the two programs that output a similiar image is to show 
 
 As shown by the profiling, using Cuda's parallel processing platform allows for almost 400 times faster rendering of the image. 
 
+Documentation for Cuda code is located [here](https://ccs-1l-f19.github.io/tracer/html/files.html)
+
 ## Working with the C++ Ray Tracer
 ---
 ![Image Produced](/Capture.PNG)
