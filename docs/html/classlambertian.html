@@ -79,29 +79,19 @@ Collaboration diagram for lambertian:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlambertian__coll__graph.png" border="0" usemap="#lambertian_coll__map" alt="Collaboration graph"/></div>
 <map name="lambertian_coll__map" id="lambertian_coll__map">
-<area shape="rect" id="node2" href="classmaterial.html" title="material" alt="" coords="13,5,81,32"/>
-<area shape="rect" id="node3" href="classvec3.html" title="vec3" alt="" coords="105,5,156,32"/>
+<area shape="rect" id="node2" href="classmaterial.html" title="material" alt="" coords="5,5,73,32"/>
+<area shape="rect" id="node3" href="classvec3.html" title="vec3" alt="" coords="98,5,149,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaff523a9a978e937a82739909acf316c"><td class="memItemLeft" align="right" valign="top"><a id="aaff523a9a978e937a82739909acf316c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>lambertian</b> (const <a class="el" href="classvec3.html">vec3</a> &amp;a)</td></tr>
-<tr class="separator:aaff523a9a978e937a82739909acf316c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a191e17273b069e21fc0f4b7fed8337f9"><td class="memItemLeft" align="right" valign="top"><a id="a191e17273b069e21fc0f4b7fed8337f9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatter</b> (const <a class="el" href="classray.html">ray</a> &amp;r_in, const <a class="el" href="structhit__record.html">hit_record</a> &amp;rec, <a class="el" href="classvec3.html">vec3</a> &amp;att, <a class="el" href="classray.html">ray</a> &amp;scat) const</td></tr>
-<tr class="separator:a191e17273b069e21fc0f4b7fed8337f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaff523a9a978e937a82739909acf316c"><td class="memItemLeft" align="right" valign="top"><a id="aaff523a9a978e937a82739909acf316c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>lambertian</b> (const <a class="el" href="classvec3.html">vec3</a> &amp;a)</td></tr>
-<tr class="separator:aaff523a9a978e937a82739909acf316c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7610f6ebbc037003adfb4a8ad7b36871"><td class="memItemLeft" align="right" valign="top"><a id="a7610f6ebbc037003adfb4a8ad7b36871"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatter</b> (const <a class="el" href="classray.html">ray</a> &amp;r_in, const <a class="el" href="structhit__record.html">hit_record</a> &amp;rec, <a class="el" href="classvec3.html">vec3</a> &amp;att, <a class="el" href="classray.html">ray</a> &amp;scat)</td></tr>
-<tr class="separator:a7610f6ebbc037003adfb4a8ad7b36871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classmaterial"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmaterial')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmaterial.html">material</a></td></tr>
-<tr class="memitem:a78cfbe3c64a6adf08dc016ecdb1789a6 inherit pub_methods_classmaterial"><td class="memItemLeft" align="right" valign="top"><a id="a78cfbe3c64a6adf08dc016ecdb1789a6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatter</b> (const <a class="el" href="classray.html">ray</a> &amp;r_in, struct <a class="el" href="structhit__record.html">hit_record</a> *rec, <a class="el" href="classvec3.html">vec3</a> &amp;att, <a class="el" href="classray.html">ray</a> &amp;scat) const =0</td></tr>
-<tr class="separator:a78cfbe3c64a6adf08dc016ecdb1789a6 inherit pub_methods_classmaterial"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd4a4214f00f851d5d107c2222b1b1f"><td class="memItemLeft" align="right" valign="top"><a id="a8cd4a4214f00f851d5d107c2222b1b1f"></a>
+__device__&#160;</td><td class="memItemRight" valign="bottom"><b>lambertian</b> (const <a class="el" href="classvec3.html">vec3</a> &amp;a)</td></tr>
+<tr class="separator:a8cd4a4214f00f851d5d107c2222b1b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d84962a8509336abe8f9287e55da07"><td class="memItemLeft" align="right" valign="top"><a id="ab1d84962a8509336abe8f9287e55da07"></a>
+virtual __device__ bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatter</b> (const <a class="el" href="classray.html">ray</a> &amp;r_in, const <a class="el" href="structhit__record.html">hit_record</a> &amp;rec, <a class="el" href="classvec3.html">vec3</a> &amp;att, <a class="el" href="classray.html">ray</a> &amp;scat, curandState *local_rand_state) const</td></tr>
+<tr class="separator:ab1d84962a8509336abe8f9287e55da07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -109,8 +99,7 @@ Public Attributes</h2></td></tr>
 <a class="el" href="classvec3.html">vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>albedo</b></td></tr>
 <tr class="separator:a81dc7cd414273c1bec5409e6bfe18f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="hittable_8h_source.html">hittable.h</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="material_8h_source.html">material.h</a></li>
 </ul>
 </div><!-- contents -->

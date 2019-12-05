@@ -1,4 +1,4 @@
 <map id="lambertian" name="lambertian">
-<area shape="rect" id="node2" href="$classmaterial.html" title="material" alt="" coords="13,5,81,32"/>
-<area shape="rect" id="node3" href="$classvec3.html" title="vec3" alt="" coords="105,5,156,32"/>
+<area shape="rect" id="node2" href="$classmaterial.html" title="material" alt="" coords="5,5,73,32"/>
+<area shape="rect" id="node3" href="$classvec3.html" title="vec3" alt="" coords="98,5,149,32"/>
 </map>

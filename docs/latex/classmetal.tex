@@ -23,17 +23,11 @@ Collaboration diagram for metal\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classmetal_a7624f5dc09c2c990ff870eac0aed8ebf}\label{classmetal_a7624f5dc09c2c990ff870eac0aed8ebf}} 
-{\bfseries metal} (const \hyperlink{classvec3}{vec3} \&a, float fuz)
+\mbox{\Hypertarget{classmetal_aa515b7c51fdaed02076e817ad37bc271}\label{classmetal_aa515b7c51fdaed02076e817ad37bc271}} 
+\+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries metal} (const \hyperlink{classvec3}{vec3} \&a, float f)
 \item 
-\mbox{\Hypertarget{classmetal_a894ce1be986fbe57fa211bc34cf93384}\label{classmetal_a894ce1be986fbe57fa211bc34cf93384}} 
-bool {\bfseries scatter} (const \hyperlink{classray}{ray} \&r\+\_\+in, const \hyperlink{structhit__record}{hit\+\_\+record} \&rec, \hyperlink{classvec3}{vec3} \&att, \hyperlink{classray}{ray} \&scat) const
-\item 
-\mbox{\Hypertarget{classmetal_afabfe136a55e444d6fe4f85718691b42}\label{classmetal_afabfe136a55e444d6fe4f85718691b42}} 
-{\bfseries metal} (const \hyperlink{classvec3}{vec3} \&a)
-\item 
-\mbox{\Hypertarget{classmetal_ac5fe2b3f2868c5e7a7a118a5efc31be0}\label{classmetal_ac5fe2b3f2868c5e7a7a118a5efc31be0}} 
-bool {\bfseries scatter} (const \hyperlink{classray}{ray} \&r\+\_\+in, const \hyperlink{structhit__record}{hit\+\_\+record} \&rec, \hyperlink{classvec3}{vec3} \&att, \hyperlink{classray}{ray} \&scat)
+\mbox{\Hypertarget{classmetal_a4a662a452dafd2124280a16cfbc333f1}\label{classmetal_a4a662a452dafd2124280a16cfbc333f1}} 
+virtual \+\_\+\+\_\+device\+\_\+\+\_\+ bool {\bfseries scatter} (const \hyperlink{classray}{ray} \&r\+\_\+in, const \hyperlink{structhit__record}{hit\+\_\+record} \&rec, \hyperlink{classvec3}{vec3} \&att, \hyperlink{classray}{ray} \&scat, curand\+State $\ast$local\+\_\+rand\+\_\+state) const
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -46,7 +40,6 @@ float {\bfseries fuzz}
 \end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-hittable.\+h\item 
 material.\+h\end{DoxyCompactItemize}

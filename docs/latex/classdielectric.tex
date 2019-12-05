@@ -23,11 +23,11 @@ Collaboration diagram for dielectric\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classdielectric_a85d94cef67b68990254c985c602a6295}\label{classdielectric_a85d94cef67b68990254c985c602a6295}} 
-{\bfseries dielectric} (float id)
+\mbox{\Hypertarget{classdielectric_afdab9c9a371d74987507bde39cf84047}\label{classdielectric_afdab9c9a371d74987507bde39cf84047}} 
+\+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries dielectric} (float id)
 \item 
-\mbox{\Hypertarget{classdielectric_a3fc10ebe6567e530ce72463b45f88a58}\label{classdielectric_a3fc10ebe6567e530ce72463b45f88a58}} 
-bool {\bfseries scatter} (const \hyperlink{classray}{ray} \&r\+\_\+in, const \hyperlink{structhit__record}{hit\+\_\+record} \&rec, \hyperlink{classvec3}{vec3} \&att, \hyperlink{classray}{ray} \&scat) const
+\mbox{\Hypertarget{classdielectric_a58aca32521bb31e5f964d8116420a16b}\label{classdielectric_a58aca32521bb31e5f964d8116420a16b}} 
+virtual \+\_\+\+\_\+device\+\_\+\+\_\+ bool {\bfseries scatter} (const \hyperlink{classray}{ray} \&r\+\_\+in, const \hyperlink{structhit__record}{hit\+\_\+record} \&rec, \hyperlink{classvec3}{vec3} \&att, \hyperlink{classray}{ray} \&scat, curand\+State $\ast$local\+\_\+rand\+\_\+state) const
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -39,4 +39,4 @@ float {\bfseries idx}
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-hittable.\+h\end{DoxyCompactItemize}
+material.\+h\end{DoxyCompactItemize}
