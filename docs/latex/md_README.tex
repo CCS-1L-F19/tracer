@@ -1,0 +1,66 @@
+This is an implementation of a ray tracer from \href{https://raytracing.github.io/books/RayTracingInOneWeekend.html#metal}{\tt {\itshape Ray Tracing in One Weekend}} as well as \href{https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/}{\tt {\itshape Accelerated Ray Tracing in One Weekend in C\+U\+DA}}
+
+The two program creates a simple image of various size spheres.
+
+ {\itshape Image Produced with Cuda}
+
+ $\ast$\+Image Produced with C++$\ast$
+
+The purpose of writing the two programs that output a similiar image is to show to the performance increase that using C\+U\+DA provides.
+
+ {\itshape Profiling of Cuda program}
+
+ {\itshape Profiling of C++ program}
+
+As shown by the profiling, using Cuda\textquotesingle{}s parallel processing platform allows for almost 400 times faster rendering of the image.
+
+\subsection*{\#\# Working with the C++ Ray Tracer }
+
+ These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+\subsubsection*{Prerequisites}
+
+To run this code you need\+:
+\begin{DoxyEnumerate}
+\item C++ Compiler(I used g++)
+\item P\+PM viewer(I used gimp, also online viewer here \href{http://paulcuth.me.uk/netpbm-viewer/}{\tt http\+://paulcuth.\+me.\+uk/netpbm-\/viewer/})
+\end{DoxyEnumerate}
+
+\subsubsection*{Installation}
+
+
+\begin{DoxyEnumerate}
+\item Download all files in the v1 folder
+\item Compile and run tracer.\+cpp with your C++ compiler
+\item Should produce a final2.\+ppm image
+\end{DoxyEnumerate}
+
+\subsection*{\#\# Modifications }
+
+To create your own scene, you have to create a list of sphere objects. 
+\begin{DoxyCode}
+hittable *list[5];
+list[0] = new sphere(vec3(0,0,-1), 0.5, new lambertian(vec3(0.1, 0.2, 0.5)));
+list[1] = new sphere(vec3(0,-100.5,-1), 100, new lambertian(vec3(0.8, 0.8, 0.0)));
+list[2] = new sphere(vec3(1,0,-1), 0.5, new metal(vec3(0.8, 0.6, 0.2), 0.3));
+list[3] = new sphere(vec3(-1,0,-1), 0.5, new dielectric(1.5));
+list[4] = new sphere(vec3(-1,0,-1), -0.45, new dielectric(1.5));
+hittable *world = new hittable\_list(list,5);
+\end{DoxyCode}
+ This is a example of list of 5 spheres Notice to create a sphere object it takes 3 parameter
+\begin{DoxyEnumerate}
+\item Vector
+\item Radius
+\item Material
+\end{DoxyEnumerate}
+
+The vector defines the center location of the sphere, taking x,y,z coordinates {\ttfamily vec3(x,y,z)}
+
+The radius is a float the set the radius of the sphere
+
+The material sets how the sphere should look, there are 3 types of materials
+\begin{DoxyEnumerate}
+\item Metals, which are reflective
+\item Lambertian, which are not reflective
+\item Dielectrics which act like glass 
+\end{DoxyEnumerate}
