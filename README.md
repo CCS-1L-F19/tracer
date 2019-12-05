@@ -1,12 +1,31 @@
 # Tracer
 ---
-This is an implementation of a ray tracer from *Ray Tracing in One Weekend*.
-It creates a simple image of various size spheres.
 
-![Image Produced](/Capture.PNG)
+This is an implementation of a ray tracer from [*Ray Tracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html#metal) as well as [*Accelerated Ray Tracing in One Weekend in CUDA*](https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/)
 
-## Getting Started
+The two program creates a simple image of various size spheres.
+
+![Image Produced with Cuda](/Spheres.PNG "Image Produced with Cuda")
+*Image Produced with Cuda*
+
+
+![Image Produced with C++](/cppSpheres.PNG "Image Produced with C++")
+*Image Produced with C++*
+
+
+The purpose of writing the two programs that output a similiar image is to show to the performance increase that using CUDA provides.
+ 
+![Profiling of Cuda program](/cudaProfile.PNG "Profiling of Cuda program")
+*Profiling of Cuda program*
+
+![Profiling of C++ program](/cppProfile.PNG "Profiling of C++ program")
+*Profiling of C++ program*
+
+As shown by the profiling, using Cuda's parallel processing platform allows for almost 400 times faster rendering of the image. 
+
+## Working with the C++ Ray Tracer
 ---
+![Image Produced](/Capture.PNG)
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
