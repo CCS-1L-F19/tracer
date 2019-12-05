@@ -21,7 +21,7 @@ The purpose of writing the two programs that output a similiar image is to show 
 ![Profiling of C++ program](/cppProfile.PNG "Profiling of C++ program")
 *Profiling of C++ program*
 
-As shown by the profiling, using Cuda's parallel processing platform allows for almost 400 times faster rendering of the image. 
+As shown by the profiling, using Cuda's parallel processing platform allows for much faster rendering of the image. 
 
 Documentation for Cuda code is located [here](https://ccs-1l-f19.github.io/tracer/html/files.html)
 
