@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmaterial.html" title="material" alt="" coords="5,56,73,83"/>
+<area shape="rect" id="node2" href="$classdielectric.html" title="dielectric" alt="" coords="125,5,200,32"/>
+<area shape="rect" id="node3" href="$classlambertian.html" title="lambertian" alt="" coords="121,56,204,83"/>
+<area shape="rect" id="node4" href="$classmetal.html" title="metal" alt="" coords="135,107,190,133"/>
+</map>
