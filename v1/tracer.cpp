@@ -81,7 +81,7 @@ int main() {
    float dist_to_focus = 10.0;
    float aperture=.1;
 
-   camera cam(from, lookat, vec3(0,1,0), 20, float(width)/float(height),aperture, dist_to_focus);
+   camera cam(from, lookat, vec3(0,1,0), 30, float(width)/float(height),aperture, dist_to_focus);
 
 
    file<<"P3"<< std::endl;//P3 sets image format as PPM, full color ascii encoded
