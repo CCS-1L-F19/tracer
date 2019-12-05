@@ -4,13 +4,21 @@ This is an implementation of a ray tracer from [*Ray Tracing in One Weekend*](ht
 
 The two program creates a simple image of various size spheres.
 
-![Image Produced with Cuda](/Spheres.PNG)
-![Image Produced with C++](/cppSpheres.PNG)
+![Image Produced with Cuda](/Spheres.PNG "Image Produced with Cuda")
+*Image Produced with Cuda*
+
+
+![Image Produced with C++](/cppSpheres.PNG "Image Produced with C++")
+*Image Produced with C++*
+
 
 The purpose of writing the two programs that output a similiar image is to show to the performance increase that using CUDA provides.
  
-![Profiling of Cuda program](/cudaProfile.PNG)
-![Profiling of C++ program](/cppProfile.PNG)
+![Profiling of Cuda program](/cudaProfile.PNG "Profiling of Cuda program")
+*Profiling of Cuda program*
+
+![Profiling of C++ program](/cppProfile.PNG "Profiling of C++ program")
+*Profiling of C++ program*
 
 As shown by the profiling, using Cuda's parallel processing platform allows for almost 400 times faster rendering of the image. 
 
